@@ -1,5 +1,5 @@
 const initialState = {
-    data: null,
+    data: false,
 };
 
 export const INFO_REQUEST = 'INFO_REQUEST';

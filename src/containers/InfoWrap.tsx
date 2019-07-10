@@ -13,10 +13,11 @@ class InfoWrap extends React.Component<info> {
         onRequestInfo()
     }
     render(): JSX.Element{
+        const { Info } = this.props;
         return (
             <React.Fragment>
                 <button onClick={() => this.handleGetInfo()}>GetInfo</button>
-                <div>{this.props.Info.data === null ? '널입니다' : this.props.Info.data.title}</div>
+                <div>{Info.data.title && Info.data.title}</div>
             </React.Fragment>
         )
     }
